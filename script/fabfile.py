@@ -38,8 +38,15 @@ def prepare_cm_node_kerberos():
 def prepare_data_node():
     prepare_linux()
 
+def prepare_data_node_rhel7():
+    prepare_linux_rhel7()
+
 def prepare_data_node_kerberos():
     prepare_data_node()
+    prepare_kerberos()
+
+def prepare_data_node_rhel7_kerberos():
+    prepare_data_node_rhel7()
     prepare_kerberos()
 
 
